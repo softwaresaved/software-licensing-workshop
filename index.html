@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>An Introduction to Software Licensing</title>
+
+		<meta name="description" content="An Introduction to Software Licensing">
+		<meta name="author" content="Neil P. Chue Hong">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/softwaresaved.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section>
+						<h1>An Introduction to Software Licensing</h1>
+						<p>Slides: <br/><a href="https://softwaresaved.github.io/software-licensing-workshop">https://softwaresaved.github.io/software-licensing-workshop</a></p>
+						<p>Materials: <br/><a href="https://github.com/software-licensing-workshop">https://github.com/software-licensing-workshop</a></p>
+						<p>These materials are licensed under the CC-BY 4.0 license.
+					</section>
+					<section>
+						<h2>Who Am I?</h2>
+						<p>Neil Chue Hong, Software Sustainability Institute</p>
+						<p>Email: N.ChueHong@software.ac.uk</p>
+						<p>Twitter: @npch</p>
+						<p>ORCID: 0000-0002-8876-7606</p>
+					</section>
+					<section>
+						<h2>Acknowledgements</h2>
+						<p>The development of this workshop was made possible by funding from EPSRC, ESRC and BBSRC through grants EP/H043160/1 and EP/N006410/1 for the UK Software Sustainability Institute.</p>
+							<p>The materials for this workshop were originally developed by Neil Chue Hong, based on material from Neil Chue Hong and Shoaib Sufi, qLegal and OSS-Watch.
+							It was originally commissioned for workshops at Cambridge University and the TRAC2018 conference.
+							Thanks to everyone at the Software Sustainability Institute for their support.</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h1>People get very __________ about licensing</h1>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>I Am Not A Lawyer</h1>
+						<p>(this is not legal advice, only opinion)</p>
+						<h2>Other resources</h2>
+						<ul>
+							<li><a href="http://ifosslawbook.org/">The International Free and Open Source Lawbook</a></li>
+							<li><a href="http://www.qlegal.qmul.ac.uk/">qLegal: advice for tech start-ups + entrepreneurs</a></li>
+							<li><a href="https://tldrlegal.com/">tl;dr legal: Software Licenses in Plain English</a></li>
+							<li><a href="http://oss-watch.ac.uk/">Open Source Software Watch</a></li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Overview of workshop</h2>
+						<ul>
+							<li>Introduction to licensing and IP</li>
+							<li>Software licenses and why they’re important</li>
+							<li>Types of software licenses and how to choose</li>
+							<li>Licensing vs governance</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Other topics</h2>
+						<ul>
+							<li>Research Funder Expectations</li>
+							<li>License compatibility</li>
+							<li>Business Models</li>
+							<li>Persuading your boss</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Licensing and Intellectual Property</h2>
+						<p align='left'>Official permission to do something, within limits:</p>
+						<ul align='left'>
+							<li>You can drink in a pub during their licensed hours</li>
+							<li>You can play live music as long as it isn’t above 75db</li>
+							<li>You can drive a vehicle up to 3,500kg with up to 8 seats</li>
+						</ul>
+						<p align='left'>Commonly used to exploit Intellectual Property:</p>
+						<ul align='left'>
+							<li>You can use my photograph to advertise your product, but only in the United Kingdom</li>
+							<li>You can screen this movie in this venue on these dates</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Intellectual Property Rights</h2>
+						<p>Intellectual Property: legal rights (IPRs) from intellectual activity in the industrial, scientific, literary and artistic fields</p>
+						<p>Patent: Protects ‘new’ ideas and has an ‘inventive step’ that is not obvious to someone who works in the subject area</p>
+						<p>Copyright: Protection of a tangible manifestation of an idea; e.g. a book or source/object code</p>
+						<p>License: An agreement or permission that grants a right to use - often in the form of a contract</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Common Fallacies</h2>
+						<h4>"I found it on the internet so I can use it"</h4>
+						<p>Publishing in a public place does not automatically grant rights to use</p>
+						<h4>"It’s fine to not have a license"</h4>
+						<p>No license worse than a restrictive license</p>
+						<h4>"You automatically own the IP to your creations"</h4>
+						<p>Often your employer may own the IP you generate as part of your job</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>What is a software license?</h2>
+					<p align='left'>A legal instrument governs the permission you are granting to others to use or distribute the software you hold the copyright on:</p>
+					<ul>
+						<li>Are you allowed to use it?</li>
+						<li>Are you allowed to copy it?</li>
+						<li>Are you allowed to resell it?</li>
+						<li>Are you allowed to change it?</li>
+						<li>Are you allowed to distribute it?</li>
+						<li>Who is liable if something goes wrong?</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h1>Introductions</h1>
+					</section>
+					<section>
+						<h1>Introductions</h1>
+						<p>Your name</p>
+						<p>Where you're from</p>
+						<p>One thing you want to learn from this workshop</p>
+						<p><i> ... add it to the shared notes ... <br/>
+						http://bit.ly/softwaresuccess-rse2017</i></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Identifying Successful Software</h1>
+					</section>
+					<section>
+						<h1>Pair Activity</h1>
+						<ol>
+							<li>Break into pairs</li>
+							<li>One person in the pair:</li>
+								<ul>
+									<li>Chooses a piece of research software they think is successful</li>
+									<li>Describe to your partner what measures make you think it is successful</li>
+									<li>Your partner writes these on a Post-It note as you talk</li>
+								</ul>
+							<li>Swap and do the same for the other person in the pair</li>
+							<li>Discuss whether you had the same ways of identifying successful software, and where they differed.</li>
+						</ol>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>How Do People Identify Success?</h1>
+					</section>
+					<section>
+						<h1>Group Discussion</h2>
+							<p>What was important?</p>
+							<p>What was unexpected?</p>
+							<p>Does the opposite hold (absence == failure)?</p>
+							<p>What's easier to measure?</p>
+							<p>What's more accurate?</p>
+							<p><i> ... be ready to share ... </i></p>
+						</section>
+				</section>
+
+				<section>
+
+					<section>
+						<h1>Existing approaches</h1>
+					</section>
+
+					<section>
+						<h1>Software Usage</h1>
+						<p>Downloads</p>
+						<p>Popularity (Forks/Stars)</p>
+						<p>Citations</p>
+						<p>Downstream Use</p>
+						<p><i> ... is someone else using it ...</i></p>
+					</section>
+
+					<section>
+						<h1>Software Usability</h1>
+						<p>Functionality</p>
+						<p>User-friendliness</p>
+						<p>Performance</p>
+						<p>Documentation Quality</p>
+						<p>Multi-platform</p>
+						<p><i>... often subjective ...</i></p>
+					</section>
+
+					<section>
+						<h1>Project Growth and Maturity</h1>
+						<p>Number of Contributors</p>
+						<p>Community Activity</p>
+						<p>Contribution Acceptance</p>
+						<p>Response Rate</p>
+						<p>Release Velocity</p>
+						<p><i> ... visible activity ... </i></p>
+					</section>
+
+					<section>
+						<h1>Project Diversity</h1>
+						<p>Contribution diversity</p>
+						<p>Contributor diversity</p>
+						<p>Contributor breadth</p>
+						<p>Decision distribution</p>
+						<p>Language bias</p>
+						<p><i> ... hidden indicators ... </i></p>
+					</section>
+
+					<section>
+						<h1>Code Quality</h1>
+						<p>Test coverage</p>
+						<p>Maintainability Indices</p>
+						<p>Cyclomatic complexity</p>
+						<p><i> ... can mask other failures ... </i></p>
+					</section>
+
+					<section>
+						<h1>Project Risk</h1>
+						<p>Bus factor</p>
+						<p>Known Vulnerabilities</p>
+						<p>Bug Age</p>
+						<p>Downstream Use</p>
+						<p><i> ... reliability leads to use ... </i></p>
+					</section>
+
+					<section>
+						<h1>But ultimately...</h1>
+						<p>High search ranking in Google</p>
+					</section>
+				</section>
+
+					<section>
+						<section>
+							<h1>Measuring Software</h1>
+						</section>
+
+					<section>
+						<h1>Group Exercise</h1>
+						<ol>
+							<li>Choose three success criteria that are important to your group</li>
+							<li>Create a small set of metrics that would allow you to rate a piece of software against that measure.</li>
+								<ul>
+									<li>Apply your metrics to two pieces of software your group is familiar with and compare, <i><b>OR</b></i></li>
+									<li>Use these metrics to rank the following set of software:
+									<ul>
+										<li>scipy: <a href="https://github.com/scipy/scipy">https://github.com/scipy/scipy</a></li>
+										<li>Spyder: <a href="https://github.com/spyder-ide/spyder">https://github.com/spyder-ide/spyder</a></li>
+										<li>pycse: <a href="https://github.com/jkitchin/pycse">https://github.com/jkitchin/pycse</a></li>
+									</ul>
+								</ul>
+							</ol>
+						</section>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>What are existing models of success?</h1>
+					</section>
+					<section>
+						<h1>Many other schemes</h1>
+						<p>See our reference list: <a href="https://github.com/softwaresaved/softwaresuccess-rse2017/blob/master/references.md">https://github.com/softwaresaved/softwaresuccess-rse2017/blob/master/references.md</a></p>
+						<p>Contribute via pull requests</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Depsy</h1>
+						</section>
+						<section data-background="depsy-scipy.png" data-background-size="contain">
+							<h2>Depsy: scipy</h2>
+						</section>
+						<section data-background="depsy-spyder.png" data-background-size="contain">
+							<h2>Depsy: Spyder</h2>
+						</section>
+						<section data-background="depsy-pycse.png" data-background-size="contain">
+							<h2>Depsy: pycse</h2>
+						</section>
+					</section>
+					<section>
+						<section>
+							<h1>Libraries.io and SourceRank</h1>
+						</section>
+						<section data-background="libio-scipy.png" data-background-size="contain">
+							<h2>Libraries.io: scipy</h2>
+						</section>
+						<section data-background="sourcerank-scipy.png" data-background-size="contain">
+							<h2>SourceRank: scipy</h2>
+						</section>
+						<section data-background="libio-spyder.png" data-background-size="contain">
+							<h2>Libraries.io: Spyder</h2>
+						</section>
+						<section data-background="libio-pycse.png" data-background-size="contain">
+							<h2>Libraries.io: pycse</h2>
+						</section>
+					</section>
+					<section>
+						<section>
+							<h1>CHAOSS Framework</h1>
+						</section>
+						<section data-background="trends.png" data-background-size="contain">
+							<h2>CHAOSS: trends and activity</h2>
+						</section>
+						<section data-background="dependencies.png" data-background-size="contain">
+							<h2>CHAOSS: dependencies</h2>
+						</section>
+						<section data-background="comparison.png" data-background-size="contain">
+							<h2>CHAOSS: comparison</h2>
+						</section>
+						<section data-background="dashboard.png" data-background-size="contain">
+							<h2>CHAOSS/GrimoireLab: dashboard</h2>
+						</section>
+					</section>
+
+				<section>
+					<section>
+						<h1>What we've learned</h1>
+					</section>
+					<section>
+						<h1>What we've learned</h1>
+						<p>Many different ways to measure software</p>
+						<p>Different people will place different importance<br/>
+							 on different measures</p>
+						<p>Some things are easy to measure, <br/>
+							some things are useful to measure</p>
+						<p>There are already examples out there - <br/>
+							some may fit your requirements</p>
+						<p>Contribute your own ideas!</p>
+					</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
