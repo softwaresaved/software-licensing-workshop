@@ -14,9 +14,8 @@ TBC
 
 ## Materials
 
-The slides for this workshop are at: TBC
-
-Reference materials are available at:
+The slides for this workshop are at: https://softwaresaved.github.io/software-licensing-workshop/
+You can get the source for the slides in the [gh-pages branch of this repository](https://github.com/softwaresaved/software-licensing-workshop/tree/gh-pages).
 
 ## Using these materials
 
@@ -36,9 +35,11 @@ The recommended citation is:
 
 > "Software Licensing Workshop" by Neil Chue Hong for the Software Sustainability Institute is licensed under CC BY 4.0
 
-Please note that XKCD cartoons are licensed under CC-BY-NC, and PhD Comics are reproduced with permission of the author. [New permission must be sought](http://phdcomics.com/about.php#faq) if modifications are made that change the use of these images.
 
 ### Acknowledgements
 
-This work was support by EPSRC/ESRC/BBSRC grant EP/N006410/1 for the UK Software Sustainability Institute. 
-It was originally developed for a workshop run at Cambridge University on 8th March 2018 and a workshop at the 2018 Theoretical Roman Archaeology Conference (TRAC).
+The development of this workshop was made possible by funding from EPSRC, ESRC and BBSRC through grants EP/H043160/1 and EP/N006410/1 for the UK Software Sustainability Institute.
+
+The materials for this workshop were originally developed by Neil Chue Hong, based on material from Neil Chue Hong and Shoaib Sufi, qLegal, OSS-Watch and ChooseALicense.com.
+
+It was originally developed for a workshop run at Cambridge University on 8th March 2018 and a workshop at the 2018 Theoretical Roman Archaeology Conference (TRAC). Thanks to everyone at the Software Sustainability Institute for their support.
