@@ -10,7 +10,7 @@ The workshop duration is anticipated to be 1 hour, though material can be scaled
 
 ## Requirements
 
-TBC
+No mandatory requirements, though it expected that those attending this workshop will have written software, extended software or be responsible for the management of software.
 
 ## Materials
 
