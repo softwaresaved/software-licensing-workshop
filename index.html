@@ -96,6 +96,9 @@
 
 				<section>
 					<section>
+						<h1>Introduction to Licensing and Intellectual Property</h1>
+					</section>
+					<section>
 						<h2>Licensing and Intellectual Property</h2>
 						<p align='left'>Official permission to do something, within limits:</p>
 						<ul align='left'>
@@ -132,6 +135,15 @@
 						<p>Often your employer may own the IP you generate as part of your job. The right license will allow you to exploit it.</p>
 					</section>
 					<section>
+						<h2>Common Use Cases</h2>
+						<h4>"I'd like to sell my software commercially"</h4>
+						<p>A license allows you to set out the conditions of use.</p>
+						<h4>"I want to let others easily reuse my work"</h4>
+						<p>A license clearly sets out what people can do, and what you are liable for.</p>
+						<h4>"I'd like to set up a company based on software I developed"</h4>
+						<p>Choosing the right license will help you exploit your software outside the university.</p>
+					</section>
+					<section>
 						<h2>What is a software license?</h2>
 						<p align='left'>A legal instrument governs the permission you are granting to others to use or distribute the software you hold the copyright on:</p>
 						<ul>
@@ -155,13 +167,33 @@
 							<li>Closed ("Proprietary")</li>
 							<li>Restricted ("Academic" / "Non-commercial")</li>
 							<li>Open ("Open Source")</li>
+								<ul>
+									<li>Copyleft ("Share modifications under same license")</li>
+									<li>Permissive ("Use with Attribution")</li>
+								</ul>
 							<li>Public Domain / CC0</li>
 							<li>Informal</li>
 							<li>No license</li>
 						</ul>
 					</section>
 					<section>
+						<h1>Question:</h1>
 						<h2>What do you want people to do with your software?</h2>
+					</section>
+					<section>
+						<h2>Key Considerations</h2>
+						<ul>
+							<li>Does your software depend on other software?</li>
+							<li>What type of impact are you seeking?</li>
+							<ul>
+								<li>Widespread usage</li>
+								<li>Commercial revenue</li>
+								<li>Research outcomes</li>
+								<li>Social or cultural change</li>
+							</ul>
+							<li>Do you care whether changes made by other people are made available?</li>
+							<li>Do you care if certain people / organisations use your software?</li>
+						</ul>
 					</section>
 					<section>
 						<h2>Other Considerations</h2>
@@ -169,8 +201,73 @@
 							<li>Larger works comprising code with different licenses (“license compatibility”)</li>
 							<li>Software made available under more than one license (“dual licensing”)</li>
 							<li>Copyright holders can re-license as they own the IP (“relicensing”)</li>
+							<li>Projects with multi contributors from different organisations ("contributor agreements")</li>
 						</ul>
 					</section>
+					<section>
+						<h2>General Tips</h2>
+						<ul>
+							<li>If using a commercial license, get it checked by a lawyer</li>
+							<li>If using an open source license, use a <a href="https://opensource.org/licenses">popular OSI-approved one</a></li>
+							<li>If thinking about using an academic / non-commercial license, think about what you'd like to achieve and consider dual-licensing</li>
+							<li>If thinking about putting into public domain, consider using a permissive open source license or CC0 instead.</li>
+							<li>Don't ever think about writing your own license from scratch!</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Common Licensing Scenarios</h1>
+					</section>
+					<section>
+						<h2>"I want a simple license that lets everyone use my code"</h2>
+						<ul>
+							<li>For a really simple license, consider the <a href="https://tldrlegal.com/license/mit-license">MIT license</a></li>
+							<ul>
+								<li>Easy for anyone to reuse software: can do anything but must provide attribution and can't hold you liable</li>
+								<li>However software can be redistributed under different terms and modifications don't have to be shared</li>
+							</ul>
+							<li>Don't want people using your (or your organisation's) name to promote products or services based on the code? Consider the <a href="https://tldrlegal.com/license/bsd-3-clause-license-%28revised%29">BSD 3-Clause license</a></li>
+							<li>Concerned about patent right grants? Consider the <a href="https://tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29">Apache License 2.0</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>"I want any improvements to the code to be shared"</h2>
+						<ul>
+							<li>If you want all changes to be shared, consider the <a href="https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29">GNU GPLv3 license</a></li>
+							<ul>
+								<li>Anyone who distributes, modifies or creates a derivative work from your software must make the source code available under the <i>same</i> terms</li>
+								<li>Provides an express grant of patent rights from contributors to users</li>
+							</ul>
+							<li>Want to make it easier for people to "productise" your code? Consider the <a href="https://tldrlegal.com/license/gnu-lesser-general-public-license-v3-%28lgpl-3%29">GNU Lesser GPL v3 License</a></li>
+							<li>Want internal deployment or software-as-a-service changes to be shared? Consider the <a href="https://tldrlegal.com/license/gnu-affero-general-public-license-v3-%28agpl-3.0%29">GNU Affero GPL v3 License</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>"I want to make money"</h2>
+						<ul>
+							<li>You can commercially exploit software released under closed, restricted and open licenses.</li>
+							<ul>
+								<li>Proprietary License: traditional "shrink wrap" software approach</li>
+								<li>Permissive Platforms: platform released under permissive license, encouraging development of an ecosystem of related tools, e.g. OpenStack
+								<li>Dual-licensing: distributed under copyleft license but also available under commercial license, e.g. MongoDB</li>
+								<li>Dual-edition: open source community edition, closed source enhanced edition, e.g. SugarCRM</li>
+						</ul>
+					</section>
+					<section>
+						<h2>What does "express grant of patent rights mean"?</h2>
+						<ul>
+							<li>Releasing code which embodies a patent may be granting rights to use the patent to anyone who chooses to use it - even if the license does not explicitly say so</li>
+							<li>Licenses such as the Apache License V2.0 and GNU GPL v3 include specific clauses for:</li>
+							<ul>
+								<li>patent grants: explicitly grant patent rights necessary to use, adapt and distribute the software</li>
+								<li>patent retaliation: anyone bringing legal action alleging the software embodies their software patents loses the licence you have granted to copy, use, adapt and distribute the software</li>
+							</ul>
+						</ul>
+					</section>
+
+
 				</section>
 
 				<section>
