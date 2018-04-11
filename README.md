@@ -8,13 +8,21 @@ This repository contains materials and instructions for running a workshop for r
 
 The workshop duration is anticipated to be 1 hour, though material can be scaled to make this shorter or longer.
 
+# Licensing for Researchers Workshop
+
+As researchers, we need to understand how to use the work of others and enable others to use our work.
+
+This repository contains materials for presenting a seminar on the basics of licensing for researchers.
+
 ## Requirements
 
-TBC
+No prerequisites
 
 ## Materials
 
-The slides for this workshop are at: TBC
+The slides for the Software Licensing workshop are at: https://github.com/softwaresaved/software-licensing-workshop/blob/gh-pages/index.html
+
+The slides for the Licensing for Researchers workshop are at: https://github.com/softwaresaved/software-licensing-workshop/blob/gh-pages/licensingforresearchers.html
 
 Reference materials are available at:
 
@@ -32,9 +40,12 @@ Under the following terms:
   - Attribution — You must give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart), provide a link to the license, and [indicate if changes were made](https://wiki.creativecommons.org/wiki/Best_practices_for_attribution#This_is_a_good_attribution_for_material_you_modified_slightly). 
   You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
   
-The recommended citation is:
+The recommended citations are:
 
 > "Software Licensing Workshop" by Neil Chue Hong for the Software Sustainability Institute is licensed under CC BY 4.0
+
+> "Licensing for Researchers workshop" by Neil Chue Hong for the Software Sustainability Institute is licensed under CC BY 4.0
+
 
 Please note that XKCD cartoons are licensed under CC-BY-NC, and PhD Comics are reproduced with permission of the author. [New permission must be sought](http://phdcomics.com/about.php#faq) if modifications are made that change the use of these images.
 
