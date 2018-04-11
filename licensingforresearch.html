@@ -1,0 +1,645 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Licensing: An Introduction for Researchers</title>
+
+		<meta name="description" content="Licensing: An Introduction for Researchers">
+		<meta name="author" content="Neil P. Chue Hong">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/softwaresaved.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section>
+						<h1>Licensing: An Introduction for Researchers</h1>
+						<small>
+						<p>Slides: <br/><a href="https://softwaresaved.github.io/software-licensing-workshop/licensingforresearchers.html">https://softwaresaved.github.io/software-licensing-workshop/licensingforresearchers.html</a></p>
+						<p>Materials: <br/><a href="https://github.com/softwaresaved/software-licensing-workshop">https://github.com/softwaresaved/software-licensing-workshop</a></p>
+						<p>These materials are licensed under the CC-BY 4.0 license.</p>
+						<p><a href="https://github.com/softwaresaved/software-licensing-workshop/issues/new">Suggest improvements using GitHub Issues</a></p>
+						</small>
+					</section>
+					<section>
+						<h2>Who Am I?</h2>
+						<p>Neil Chue Hong, Software Sustainability Institute</p>
+						<p>Email: N.ChueHong@software.ac.uk</p>
+						<p>Twitter: @npch</p>
+						<p>ORCID: 0000-0002-8876-7606</p>
+					</section>
+					<section>
+						<h2>Acknowledgements</h2>
+						<p>The development of this workshop was made possible by funding from EPSRC, ESRC and BBSRC through grants EP/H043160/1 and EP/N006410/1 for the UK Software Sustainability Institute.</p>
+							<p>The materials for this workshop were originally developed by Neil Chue Hong, based on material from Neil Chue Hong and Shoaib Sufi, qLegal, and OSS-Watch.
+							It was originally commissioned for workshops at Cambridge University and the TRAC2018 conference.
+							Thanks to everyone at the Software Sustainability Institute for their support.</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h1>People get very __________ about licensing</h1>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>I Am Not A Lawyer</h1>
+						<p>(this is not legal advice, only opinion)</p>
+						<h2>Other resources</h2>
+						<ul>
+							<li><a href="https://subjectguides.york.ac.uk/copyright">Copyright: a Practical Guide</a></li>
+							<li><a href="http://guides.lib.umich.edu/permissions/overview">Obtaining Copyright Permissions</a></li>
+							<li><a href="http://www.web2rights.com/resources.html">Web2Rights</h2>
+							<li><a href="http://ifosslawbook.org/">The International Free and Open Source Lawbook</a></li>
+							<li><a href="http://www.qlegal.qmul.ac.uk/">qLegal: advice for tech start-ups + entrepreneurs</a></li>
+							<li><a href="https://tldrlegal.com/">tl;dr legal: Software Licenses in Plain English</a></li>
+							<li><a href="http://oss-watch.ac.uk/">Open Source Software Watch</a></li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Overview of workshop</h2>
+						<ul>
+							<li>Introduction to licensing and IP</li>
+							<li>Why licences are important</li>
+							<li>Using others' work (vs letting others use your work)</li>
+							<li>Research Funder Expectations</li>
+							<li>Licensing your data</li>
+							<li>Licensing your software</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Other topics</h2>
+						<ul>
+							<li>Software Licensing vs Software Governance</li>
+							<li>License compatibility</li>
+							<li>Business Models</li>
+							<li>Persuading your boss</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Introduction to Licensing and Intellectual Property</h1>
+					</section>
+					<section>
+						<h2>Licensing and Intellectual Property</h2>
+						<p align='left'>Official permission to do something, within limits:</p>
+						<ul align='left'>
+							<li>You can drink in a pub during their licensed hours</li>
+							<li>You can play live music as long as it isn’t above 75db</li>
+							<li>You can drive a vehicle up to 3,500kg with up to 8 seats</li>
+						</ul>
+						<p align='left'>Commonly used to exploit Intellectual Property:</p>
+						<ul align='left'>
+							<li>You can use my photograph to advertise your product, but only in the United Kingdom</li>
+							<li>You can screen this movie in this venue on these dates</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Intellectual Property Rights</h2>
+						<p>Intellectual Property: legal rights (IPRs) from intellectual activity in the industrial, scientific, literary and artistic fields</p>
+						<p>Patent: Protects ‘new’ ideas and has an ‘inventive step’ that is not obvious to someone who works in the subject area</p>
+						<p>Copyright: Protection of a tangible manifestation of an idea; e.g. a book or source/object code</p>
+						<p>License: An agreement or permission that grants a right to use - often in the form of a contract</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Why licences are important</h1>
+					</section>
+					<section>
+						<h2>Common Fallacies</h2>
+						<h4>"I found it on the internet so I can use it"</h4>
+						<p>Publishing in a public place does not automatically grant rights to use.</p>
+						<h4>"It’s fine to not have a licence"</h4>
+						<p>No license worse than a restrictive licence.</p>
+						<h4>"You automatically own the IP to your creations"</h4>
+						<p>Often your employer may own the IP you generate as part of your job. The right licence will allow you to exploit it.</p>
+					</section>
+					<section>
+						<h2>Common Use Cases</h2>
+						<h4>"I'd like to sell my work commercially"</h4>
+						<p>A licence allows you to set out the conditions of use.</p>
+						<h4>"I want to let others easily reuse my work"</h4>
+						<p>A licence clearly sets out what people can do, and what you are liable for.</p>
+						<h4>"I'd like to set up a company based on things I developed during my research"</h4>
+						<p>Choosing the right license will help you exploit your work outside the university.</p>
+					</section>
+					<section>
+						<h2>What can be licensed</h2>
+						<p>
+							<ul>
+								<li>Textual Works</li>
+								<li>Images</li>
+								<li>Musical works and Sound recordings</li>
+								<li>Films</li>
+								<li>Dramatic works</li>
+								<li>Datasets</li>
+								<li>Software</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h2>What is a license?</h2>
+						<p align='left'>A legal instrument governs the permission you are granting to others to use or distribute the work you hold the copyright on:</p>
+						<ul>
+							<li>Are you allowed to use it?</li>
+							<li>Are you allowed to copy it?</li>
+							<li>Are you allowed to resell it?</li>
+							<li>Are you allowed to change it?</li>
+							<li>Are you allowed to distribute it?</li>
+							<li>Who is liable if something goes wrong?</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Using others' work (vs letting others use your work)</h1>
+					</section>
+					<section>
+						<h2>Using images or texts</h2>
+						<p>Covers: presentations, posters, publications, blogs...</p>
+						<p>Onus is on you as the user to ensure you have right to use</p>
+						<p>Free-to-view doesn't automatically mean free to re-use</p>
+							<ul>
+								<li>Critique / Review: allowed to 'quote' copyrighted material as long as it doesn't impact market for work and you credit rights-holder (fair dealing)</li>
+								<li>Teaching: e.g. in course handouts. Must ensure that material is attributed and not shared outside classroom</li>
+								<li>Linking: linking to material does not infringe copyright <!-- in EU --></li>
+							</ul>
+					</section>
+					<section>
+						<h2>Creative Commons</h2>
+						<p>Creators of texts, images, datasets and creative works increasingly use <a href="https://creativecommons.org/licenses/">Creative Commons licences</a> to enable reuse.</p>
+						<ul>
+							<li>Creative Commons image search (including Flickr): <a href="https://ccsearch.creativecommons.org/">https://ccsearch.creativecommons.org/</a></li>
+							<li>OpenDOAR open access repository search: <a href="http://www.opendoar.org/">http://www.opendoar.org/</a></li>
+							<li>Open Data Network open data search: <a href="https://www.opendatanetwork.com/">https://www.opendatanetwork.com/</a></li>
+							<li>Re3Data registry of research data repositories: <a href="https://www.re3data.org/">https://www.re3data.org/</a></li>
+						</ul>
+						<p>For software, there are open source licenses</p>
+					</section>
+					<section>
+						<h2>Warning: laws vary!</h2>
+						<p>Sometimes even using your own photos may not be risk-free</p>
+						<h3>Taking photos of objects in a gallery</h3>
+						<p>Even if out of copyright, the gallery may have a policy that doesn't exempt educational use. Or the object may contain sensitive information.</p>
+						<h3>Taking photos in a public space</h3>
+						<p>In many countries you own the copyright of images taken in a public space, but in some - such as Italy - do not allow 'freedom of panorama' </p>
+					</section>
+					<section>
+						<h2>Librarians know best!</h2>
+						<p>In most cases, the most useful information on understanding the use of copyrighted works will come from your library</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Expectations from Research Funders</h1>
+					</section>
+					<section>
+						<h2>Science as an Open Enterprise</h2>
+						<p>"Publishing data in a reusable form to support findings must be mandatory"</p>
+					</section>
+					<section>
+						<h2>European Commission Recommendation on access to and preservation of scientific information</h2>
+						<p>"Open access to scientific research data enhances data quality, reduces the need for
+duplication of research, speeds up scientific progress and helps to combat scientific
+fraud."</p>
+					</section>
+					<section>
+						<h2>RCUK committed to openness</h2>
+						<p>“As bodies charged with investing public money in research, the Research Councils take very seriously their responsibilities in making the outputs from this research publicly available – not just to other researchers, but also to potential users in business, charitable and public sectors, and to the general tax‐paying public.”
+- <a href="http://www.rcuk.ac.uk/research/openaccess/">http://www.rcuk.ac.uk/research/openaccess/</a></p>
+						<p>“Publicly funded research data are a public good, produced in the public interest, which should be made openly available with as few restrictions as possible in a timely and responsible manner that does not harm intellectual property.” - <a href="http://www.rcuk.ac.uk/research/datapolicy/">http://www.rcuk.ac.uk/research/datapolicy/</a></p>
+					</section>
+					<section>
+						<h2>What about software?</h2>
+						<ul>
+							<li>Depends on research being carried out</li>
+							<li>Deciding factor is whether the software is necessary to validate research findings</li>
+							<li>Even if you don’t need to preserve software, it’s good practice to make available to enable access, validation, and reuse of your results</li>
+							<li>And sometimes it’s easier to store the code than the results</li>
+							<li>Does not prevent commercialisation and exploitation of software, but you should make a case for why you are not open-sourcing code</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Expectations around software</h2>
+						<p align='left'>Research organisations are not expected to assume responsibility for software not produced within their own organisation</p>
+						<ul>
+							<li>Prudent to take reasonable steps to assure the continued availability of the software you use</li>
+							<li>Preserving copy of open-source software</li>
+							<li>Use commercial software where a multi-year support agreement is available</li>
+							<li>Use open-data formats</li>
+						</ul>
+						<p align='left'>Not all software must be shared, if there are ethical, legal or commercial reasons</p>
+					</section>
+
+					<!-- TODO: Port scenarios to reveal.js -->
+
+					<section>
+						<img src="amy.png">
+					</section>
+					<section>
+						<img src="brian.png">
+					</section>
+					<section>
+						<img src="colin.png">
+					</section>
+					<section>
+						<img src="diya.png">
+					</section>
+					<section>
+						<img src="erin.png">
+					</section>
+					<section>
+						<img src="feng.png">
+					</section>
+					<section>
+						<h2>Summary for PIs</h2>
+						<ul>
+							<li>Review what software you expect to use and produce</li>
+							<ul>
+								<li>A software management plan may help</li>
+							</ul>
+							<li>Record what software versions and parameters you use</li>
+							<ul>
+								<li>In some cases, this may mean data storage is not required</li>
+							</ul>
+							<li>Develop code in a repository</li>
+							<li>Open source should be de facto choice</li>
+							<ul>
+								<li>Unless there are legal, ethical or commercial concerns</li>
+								<li>Enables validation of published results, in conjunction with appropriate documentation and access to data</li>
+							</ul>
+						</ul>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h1>Choosing a license isn't hard, but we think it is</h1>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Licensing your data</h1>
+					</section>
+					<section>
+						<h2>Why license research data?</h2>
+						<ul>
+							<li>Comply with research funder mandates</li>
+							<li>Enabling reproducibility and transparency</li>
+							<li>Improves interdisciplinary and citizen science use</li>
+							<li>Increase efficiency of research, reduce duplication of effort</li>
+							<li>Increase the impact of research</li>
+							<li>Improve your citation count</li>
+					</section>
+					<section>
+						<h2>What to consider when licensing your data</h2>
+						<p>Does your organisation or funder already have a preferred licence?</p>
+						<p>Who do you want to reuse your data?</p>
+						<p>Do you want derived works released under similar terms?</p>
+						<h3>Digital Curation Centre guide on How to License Research Data</h3>
+						<p><a href="http://www.dcc.ac.uk/resources/how-guides/license-research-data">http://www.dcc.ac.uk/resources/how-guides/license-research-data</a></p>
+					</section>
+					<section>
+						<h2>Try to make your data FAIR</h2>
+						<ul>
+							<li>Findable</li>
+							<li>Accessible</li>
+							<li>Interoperable</li>
+							<li>Reusable</li>
+						</ul>
+						<p>The FAIR Guiding Principles for scientific data management: <a href="http://doi.org/10.1038/sdata.2016.18">doi: 10.1038/sdata.2016.18</a></p>
+					</section>
+				</section>
+
+
+
+				<section>
+					<section>
+						<h1>Licensing your software</h1>
+					</section>
+					<section>
+						<h1>Question:</h1>
+						<h2>What do you want people to do with your software?</h2>
+					</section>
+					<section>
+						<h2>Key Considerations</h2>
+						<ul>
+							<li>Does your software depend on other software?</li>
+							<li>What type of impact are you seeking?</li>
+							<ul>
+								<li>Widespread usage</li>
+								<li>Commercial revenue</li>
+								<li>Research outcomes</li>
+								<li>Social or cultural change</li>
+							</ul>
+							<li>Do you care whether changes made by other people are made available?</li>
+							<li>Do you care if certain people / organisations use your software?</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Other Considerations</h2>
+						<ul>
+							<li>Larger works comprising code with different licenses (“license compatibility”)</li>
+							<li>Software made available under more than one license (“dual licensing”)</li>
+							<li>Copyright holders can re-license as they own the IP (“relicensing”)</li>
+							<li>Projects with multi contributors from different organisations ("contributor agreements")</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Types of License</h2>
+						<ul>
+							<li>Closed ("Proprietary")</li>
+							<li>Restricted ("Academic" / "Non-commercial")</li>
+							<li>Open ("Open Source")</li>
+								<ul>
+									<li>Copyleft ("Share modifications under same license")</li>
+									<li>Permissive ("Use with Attribution")</li>
+								</ul>
+							<li>Public Domain / CC0</li>
+							<li>Informal</li>
+							<li>No license</li>
+						</ul>
+					</section>
+					<section>
+							<h2>How do I <i>actually</i> license my software?</h2>
+							<ul>
+								<li>Choose a license <i>(more on this soon)</i></li>
+								<li>Put the license text in a file called LICENSE.TXT or LICENSE.md in the root directory of your source code repository <i>(you are using version control, right?)</i></li>
+								<li>Include information about your chosen license in your README <i>(and website and documentation if you have them)</i></li>
+								<li>(Optionally) Add copyright and licensing information to your source code files <i>(there are tools to help)</i></li>
+							</ul>
+					</section>
+					<section>
+						<h2>General Tips</h2>
+						<ul>
+							<li>If using a commercial license, get it checked by a lawyer</li>
+							<li>If using an open source license, use a <a href="https://opensource.org/licenses">popular OSI-approved one</a></li>
+							<li>If thinking about using an academic / non-commercial license, think about what you'd like to achieve and consider dual-licensing</li>
+							<li>If thinking about putting into public domain, consider using a permissive open source license or CC0 instead.</li>
+							<li>Don't ever think about writing your own license from scratch!</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Pros and Cons of Open Source</h2>
+  					<div style="text-align: left; float: left; width: 45%;">
+							<p>Pros</p>
+							<ul>
+								<li>Easier to evaluate</li>
+								<li>No lock-in</li>
+								<li>Easier to attract contributors and staff</li>
+								<li>Frictionless code sharing</li>
+								<li>Free advertising</li>
+								<li>Able to take with you</li>
+								<li>Reduced duplication</li>
+								<li>Can work together on common platforms</li>
+							</ul>
+						</div>
+						<div style="text-align: left; float: right; width: 45%;">
+							<p>Cons</p>
+							<ul>
+								<li>Harder to corner cut <!--when shipping to deadline--></li>
+								<li>Harder to gain income from <i>directly</i> selling the software</li>
+								<li>Cannot restrict to non-commercial use only</li>
+								<li>Once licensed, cannot revoke license <!--(Though can relicense)--></li>
+								<li>Can increase competition</li>
+							</ul>
+  					</div>
+					</section>
+					<section>
+						<h2>Copyleft vs Permissive</h2>
+						<ul>
+							<li>Software freedom vs developer freedom</li>
+							<li>Copyleft licenses have increased license management costs</li>
+							<li>Industry is generally more supportive of permissive licenses</li>
+							<li>Open source software no longer written as an alternative to closed, but as the platform to drive service provision</li>
+							<li>Software no longer the competitive differentiator, but the ability to operate it at scale is</li>
+							<li>Further reading: <a href="http://timreview.ca/article/650">Is Open Source Sustainable?</a></li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Common Software Licensing Scenarios</h1>
+					</section>
+					<section>
+						<h2>"I want a simple license that lets everyone use my code"</h2>
+						<ul>
+							<li>For a really simple license, consider the <a href="https://tldrlegal.com/license/mit-license">MIT license</a></li>
+							<ul>
+								<li>Easy for anyone to reuse software: can do anything but must provide attribution and can't hold you liable</li>
+								<li>However software can be redistributed under different terms and modifications don't have to be shared</li>
+							</ul>
+							<li>Don't want people using your (or your organisation's) name to promote products or services based on the code? Consider the <a href="https://tldrlegal.com/license/bsd-3-clause-license-%28revised%29">BSD 3-Clause license</a></li>
+							<li>Concerned about patent right grants? Consider the <a href="https://tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29">Apache License 2.0</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>"I want any improvements to the code to be shared"</h2>
+						<ul>
+							<li>If you want all changes to be shared, consider the <a href="https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29">GNU GPLv3 license</a></li>
+							<ul>
+								<li>Anyone who distributes, modifies or creates a derivative work from your software must make the source code available under the <i>same</i> terms</li>
+								<li>Provides an express grant of patent rights from contributors to users</li>
+							</ul>
+							<li>Want to make it easier for people to "productise" your code? Consider the <a href="https://tldrlegal.com/license/gnu-lesser-general-public-license-v3-%28lgpl-3%29">GNU Lesser GPL v3 License</a></li>
+							<li>Want internal deployment or software-as-a-service changes to be shared? Consider the <a href="https://tldrlegal.com/license/gnu-affero-general-public-license-v3-%28agpl-3.0%29">GNU Affero GPL v3 License</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>"I want to make money"</h2>
+						<ul>
+							<li>You can commercially exploit software released under closed, restricted and open licenses.</li>
+							<ul>
+								<li>Proprietary License: traditional "shrink wrap" software approach</li>
+								<li>Permissive Platforms: platform released under permissive license, encouraging development of an ecosystem of related tools, e.g. OpenStack
+								<li>Dual-licensing: distributed under copyleft license but also available under commercial license, e.g. MongoDB</li>
+								<li>Dual-edition: open source community edition, closed source enhanced edition, e.g. SugarCRM</li>
+						</ul>
+					</section>
+					<section>
+						<h2>What does "express grant of patent rights mean"?</h2>
+						<ul>
+							<li>Releasing code which embodies a patent may be granting rights to use the patent to anyone who chooses to use it - even if the license does not explicitly say so</li>
+							<li>Licenses such as the Apache License V2.0 and GNU GPL v3 include specific clauses for:</li>
+							<ul>
+								<li>patent grants: explicitly grant patent rights necessary to use, adapt and distribute the software</li>
+								<li>patent retaliation: anyone bringing legal action alleging the software embodies their software patents loses the licence you have granted to copy, use, adapt and distribute the software</li>
+							</ul>
+						</ul>
+					</section>
+				</section>
+
+<!-- TODO: Port examples of different research software and how they're licensed
+				<section>
+					<section>
+						<h1>Licensing Examples</h1>
+					</section>
+				</section>
+-->
+
+				<section>
+					<section>
+						<h1>Takeaways</h1>
+						<ol>
+							<li>Understand who owns the IP to works you create or use</li>
+							<li>Identify if you are using copyrighted works, and ensure you understand their licences</li>
+							<li>Decide what impact you are seeking</li>
+							<li>Choose an appropriate license, and apply it</li>
+							<li>Get help from others when you need it</li>
+						</ol>
+					</section>
+					<section>
+						<h1>Thank you - questions?</h1>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h1>Other Topics</h1>
+					</section>
+				</section>
+
+
+								<section>
+									<section>
+										<h1>Licensing vs Governance</h1>
+									</section>
+									<section>
+										<h2>Governance is...</h2>
+										<h3>...the thing that stops a project from descending into chaos</h3>
+										<p>Ground rules for decision making, participation, communication and sharing.</p>
+									</section>
+									<section>
+										<h2>Open source vs Open development</h2>
+										<p align='left'>Open source software philosophy is more than the license</p>
+										<ul>
+											<li>Some open licensed software is not produced openly</li>
+											<li>Some closed licensed software benefits from open source project principles and processes</li>
+											<li>Many open source contributors are paid (in some way) to do so</li>
+										</ul>
+									</section>
+									<section>
+										<h2>Best practice for software projects</h2>
+										<p align='left'>Best practice identified from OSS projects useful for managing all types of software projects/products</p>
+										<ul>
+											<li><a href="http://producingoss.com">Producing OSS by Karl Fogel</a>: open forums, websites, transparent decision making, releasing software well, open about status</li>
+										</ul>
+										<p><i>Open source licensed software != Open development</i></p>
+										<p><i>Can use open development practices in closed source projects</i></p>
+									</section>
+				<!-- TODO: Add examples of open source governance models
+									<section>
+										<h2>Types of open source governance models</h2>
+									</section>
+				-->
+								</section>
+
+				<section>
+					<section>
+						<h1>License Compatibility</h1>
+					</section>
+					<section>
+						<h2>License Compatibility</h2>
+						<img src="licensecompatibility.png">
+
+						<p>Image courtesy of <a href="https://www.dwheeler.com/essays/floss-license-slide.html">David A. Wheeler</a>, licensed under CC-BY-SA</p>
+					</section>
+					<section>
+						<h2>Notes on license compatibility</h2>
+						<ul>
+							<li>An arrow from box A to box B means that you can combine software with these licenses; the combined result effectively has the license of B, possibly with additions from A.</li>
+							<li>Strict GNU Public License v2 (no "or later" clause) cannot be combined with GPLv3 or LGPLv3</li>
+							<li>MPL is incompatible with GPL licenses</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Business Models</h1>
+					</section>
+					<!-- TODO: Add slides -->
+				</section>
+
+				<section>
+					<section>
+						<h1>Persuading Your Boss</h1>
+					</section>
+					<!-- TODO: Add slides -->
+				</section>
+
+
+
+				<section>
+					<section>
+						<h2>Extra Reading Material</h2>
+						<ul>
+							<li><a href="http://www.astrobetter.com/blog/2014/03/10/the-whys-and-hows-of-licensing-scientific-code/">The Whys and Hows of Licensing Scientific Code</a></li>
+							<li><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598">A Quick Guide to Software Licensing for the Scientist-Programmer</a></li>
+							<li><a href="https://opensource.guide/legal/">The Legal Side to Open Source</a></li>
+							<li><a href="http://ifosslawbook.org/">The International Free and Open Source Lawbook</a></li>
+							<li><a href="http://www.qlegal.qmul.ac.uk/">qLegal: advice for tech start-ups + entrepreneurs</a></li>
+							<li><a href="https://tldrlegal.com/">tl;dr legal: Software Licenses in Plain English</a></li>
+							<li><a href="http://oss-watch.ac.uk/">Open Source Software Watch</a></li>
+						</ul>
+					</section>
+				</section>
+
+			</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
